@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
+.calculator {
+  background: #d9d8d8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.479);
+  width: 270px;
+}
+
+.display {
+  width: 270px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ff791f;
+  border-radius: 15px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.479);
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 20px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #ff791f;
+}
+
+.signature {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.signature p {
+  margin: 4px 0;
+}
+
+.signature a {
+  color: #0072c6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signature a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 400px) {
+  body {
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .calculator {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .display {
+    width: 100%;
+  }
+}
+.copyright {
+  
+  font-size: 13px;
+  color: #000000;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
